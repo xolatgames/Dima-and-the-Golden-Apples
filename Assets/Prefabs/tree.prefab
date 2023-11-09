@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cb3afd619c6cae08bae097312a565b18, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.239311
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb3afd619c6cae08bae097312a565b18, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb3afd619c6cae08bae097312a565b18, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.4830742
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb3afd619c6cae08bae097312a565b18, type: 3}
       propertyPath: m_LocalRotation.w
@@ -75,5 +75,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cb3afd619c6cae08bae097312a565b18, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2713907579051094515}
   m_SourcePrefab: {fileID: 100100000, guid: cb3afd619c6cae08bae097312a565b18, type: 3}
+--- !u!1 &9167973554564076196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cb3afd619c6cae08bae097312a565b18, type: 3}
+  m_PrefabInstance: {fileID: 8357069635614060533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &2713907579051094515
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167973554564076196}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 3.03
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.94, z: 0}

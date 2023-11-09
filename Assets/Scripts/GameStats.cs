@@ -10,6 +10,10 @@ public class GameStats : MonoBehaviour
 
     public Vector3 playerPosition;
 
+    public string task = "";
+
+    public bool sword = false;
+
     private void Start()
     {
         if (instance == null)
