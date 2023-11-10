@@ -4,6 +4,7 @@ using UnityEngine;
 
 [RequireComponent (typeof (PlayerPosition))]
 [RequireComponent (typeof (CharacterController))]
+[RequireComponent (typeof (CollisionWithThePoint))]
 public class PlayerMovement : MonoBehaviour
 {
     private CharacterController controller;

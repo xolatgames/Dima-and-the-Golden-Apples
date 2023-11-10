@@ -10,6 +10,8 @@ public class GameStats : MonoBehaviour
 
     public Vector3 playerPosition;
 
+    public Dictionary<string, Vector3> levelPositions = new Dictionary<string, Vector3>();
+
     public string task = "";
 
     public bool sword = false;

@@ -5,7 +5,8 @@ using TMPro;
 
 public class Story : MonoBehaviour
 {
-    public TextMeshProUGUI dialog;
+    [SerializeField]
+    private TextMeshProUGUI dialog;
 
     public void ChangeTheText(string text)
     {
