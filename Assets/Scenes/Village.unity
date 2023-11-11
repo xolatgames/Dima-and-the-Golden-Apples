@@ -956,6 +956,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: point (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7014502110897345401, guid: 7a91332a9bd88938e9e0a943d8ee6255, type: 3}
+      propertyPath: condition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014502110897345401, guid: 7a91332a9bd88938e9e0a943d8ee6255, type: 3}
+      propertyPath: changeToTheScene
+      value: Forest
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1350,6 +1358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: point
       objectReference: {fileID: 0}
+    - target: {fileID: 7014502110897345401, guid: 7a91332a9bd88938e9e0a943d8ee6255, type: 3}
+      propertyPath: currentEvent
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1557,39 +1569,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4189278407119781788, guid: ad9f77b792b5a8c40aea27d59d86a7b3, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6071167757947278994, guid: ad9f77b792b5a8c40aea27d59d86a7b3, type: 3}
       propertyPath: m_Name
       value: Story
       objectReference: {fileID: 0}
     - target: {fileID: 6071167757947278994, guid: ad9f77b792b5a8c40aea27d59d86a7b3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6071167757947278994, guid: ad9f77b792b5a8c40aea27d59d86a7b3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5535217397653235954}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad9f77b792b5a8c40aea27d59d86a7b3, type: 3}
---- !u!1 &5535217397653235944 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6071167757947278994, guid: ad9f77b792b5a8c40aea27d59d86a7b3, type: 3}
-  m_PrefabInstance: {fileID: 5535217397653235941}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5535217397653235954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5535217397653235944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec90b9d8e16bd18dbb8713fbbaf1c2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8513477267181839880
 PrefabInstance:
   m_ObjectHideFlags: 0

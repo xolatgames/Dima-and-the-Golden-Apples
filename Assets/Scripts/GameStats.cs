@@ -16,7 +16,7 @@ public class GameStats : MonoBehaviour
 
     public bool sword = false;
 
-    private void Start()
+    private void Awake()
     {
         if (instance == null)
         {
