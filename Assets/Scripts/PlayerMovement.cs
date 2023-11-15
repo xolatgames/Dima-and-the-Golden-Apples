@@ -10,8 +10,12 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     [SerializeField]
     private bool canMove = false;
+    [SerializeField]
     private float mouseSensitive = 4.0f;
-    private float playerSpeed = 0.02f;
+    [SerializeField]
+    private float playerSpeed = 1.0f;
+    [SerializeField]
+    private float gravity = 1.0f;
 
     private void Start()
     {
@@ -23,8 +27,9 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.Rotate(0, Input.GetAxis("Mouse X") * mouseSensitive, 0);
 
-            controller.Move((Input.GetAxis("Horizontal") * -transform.right * playerSpeed) + 
-(Input.GetAxis("Vertical") * -transform.forward * playerSpeed));
+            controller.Move(((Input.GetAxis("Horizontal") * -transform.right * playerSpeed) + 
+(Input.GetAxis("Vertical") * -transform.forward * playerSpeed) + 
+new Vector3(0, -gravity, 0)) * Time.deltaTime);
         }
     }
 }

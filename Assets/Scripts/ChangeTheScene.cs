@@ -7,10 +7,7 @@ public class ChangeTheScene : MonoBehaviour
 {
     public void ChangeToTheScene(string scene)
     {
-        if (!GameStats.instance.levelPositions.ContainsKey(SceneManager.GetActiveScene().name))
-        {
-            GameStats.instance.levelPositions.Add(SceneManager.GetActiveScene().name, GameStats.instance.playerPosition);
-        }
+        GameStats.instance.levelPositions[SceneManager.GetActiveScene().name] = GameStats.instance.playerPosition;
         SceneManager.LoadScene(scene);
     }
 }

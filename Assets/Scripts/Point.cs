@@ -16,6 +16,8 @@ public class Point : MonoBehaviour
     [SerializeField]
     private Animator playStory;
     [SerializeField]
+    private string animationState;
+    [SerializeField]
     private Condition condition;
 
     private void Start() {
@@ -25,6 +27,11 @@ public class Point : MonoBehaviour
         }
 
         if (condition == Condition.Sword && !GameStats.instance.sword)
+        {
+            Destroy(gameObject);
+        }
+
+        if (currentEvent == Event.PlayStory && GameStats.instance.playedAnimation.ContainsKey(animationState))
         {
             Destroy(gameObject);
         }
@@ -39,7 +46,8 @@ public class Point : MonoBehaviour
                 break;
 
             case Event.PlayStory:
-                playStory.Play("Entry");
+                playStory.Play(animationState);
+                GameStats.instance.playedAnimation[animationState] = true;
                 Destroy(gameObject);
                 break;
 
